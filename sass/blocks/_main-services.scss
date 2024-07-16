@@ -1,5 +1,5 @@
 .main__services {
-    background-image: url('/src/img/bg/main-services.png');
+    background-image: url('../../img/bg/main-services.png');
     background-repeat: no-repeat;
     background-size: cover;
     height: 100%;
@@ -19,7 +19,7 @@
     display: flex;
     flex-wrap: wrap;
     align-items: center;
-    justify-content: center;
+    justify-content: space-around;
 }
 
 .main__services_item {
@@ -30,21 +30,10 @@
     align-items: center;
     background: #222222;
     border-radius: 15px;
-
-    margin-right: 20px;
     margin-bottom: 20px;
     box-sizing: border-box;
 }
 
-
-//ДОДЕЛАТЬ
-.main__services_item:nth-child(3) {
-    // margin-right: 0px;
-}
-
-.main__services_item:nth-child(5) {
-    margin-right: 0px;
-}
 
 .main__services_item_img {
     border-top-left-radius: 15px;

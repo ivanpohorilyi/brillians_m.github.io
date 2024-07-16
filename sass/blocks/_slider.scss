@@ -120,6 +120,13 @@ body {
     }
   }
 
+  @media (max-width: 500px) {
+    .swiper-button-prev,
+    .swiper-button-next {
+      display: none;
+    }
+  }
+
   .swiper-button-prev {
     &:after {
       position: relative;

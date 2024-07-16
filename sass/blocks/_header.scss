@@ -1,11 +1,10 @@
 // header
 
 header {
-    background-image: url('/src/img/bg/header.png');
+    background-image: url('../../img/bg/header.png');
     background-repeat: no-repeat;
     background-size: cover;
     height: 100vh;
-
 }
 
 .header__body {}
@@ -56,6 +55,24 @@ header {
     border: 1px solid #ffffff;
     border-radius: 45px;
     padding: 26px 70px;
+}
+
+@media (max-width: 500px) {
+    .header__block_title {
+        font-size: 40px;
+    }
+    .header__block_subtitle {
+        font-size: 25px;
+    }
+    .header__block {
+        margin-top: 100px;
+    }
+    header {
+        background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../../img/bg/header.png');
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 100vh;
+    }
 }
 
 .header__block_btn:hover {
