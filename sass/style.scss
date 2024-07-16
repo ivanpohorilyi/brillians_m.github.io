@@ -6,7 +6,12 @@
     font-style: normal;
     margin: 0;
     padding: 0;
-} 
+}
+
+h2 {
+    font-weight: 200;
+    font-family: "Josefin Sans", sans-serif;
+}
 
 a {
     text-decoration: none;
@@ -24,6 +29,7 @@ a:hover {
 }
 
 .title {
+    font-family: "Josefin Sans", sans-serif;
     font-size: 38px;
     text-align: center;
     color: #ffff;
@@ -37,5 +43,6 @@ a:hover {
 @import 'blocks/slider';
 @import 'blocks/main-services';
 @import 'blocks/packages';
+@import 'blocks/gallery';
 
 //media queries

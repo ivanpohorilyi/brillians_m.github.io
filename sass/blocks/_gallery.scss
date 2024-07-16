@@ -1,0 +1,48 @@
+.gallery {
+    height: 1300px;
+    background-color: #000000;
+}
+
+.gallery__title {
+    padding-top: 63px;
+}
+
+.gallery__nav {
+    margin-top: 54px;
+}
+
+.filter-button
+{
+    font-size: 15px;
+    background: #fff;
+    border-radius: 10px;
+    padding: 22px 53px;
+    text-align: center;
+    color: #000000;
+    margin-bottom: 30px;
+
+}
+.filter-button:hover
+{
+    border: 1px solid #4d7a45;
+    border-radius: 7px;
+    color: #000000;
+    background-color: $main-color;
+
+}
+.btn-default:active .filter-button:active
+{
+    background-color: #42B32F;
+    color: white;
+}
+
+.port-image
+{
+    width: 100%;
+    height: 100%;
+}
+
+.gallery_product
+{
+    margin-bottom: 30px;
+}
