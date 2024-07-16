@@ -1,0 +1,24 @@
+@media (max-width: 768px) {
+    .advantages__items {
+        padding-right: 0;
+        justify-content: space-around;
+    .advantages__item {
+        width: 25%;
+    }
+    }
+}
+
+@media (max-width: 425px) {
+    .advantages__items {
+        padding-right: 0;
+        flex-direction: column;
+    .advantages__item {
+        width: 100%;
+        padding: 0 50px 0 50px;
+        margin-bottom: 15px;
+        &:last-child {
+            margin-bottom: 0;
+        }
+    }
+    }
+}

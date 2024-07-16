@@ -1,0 +1,39 @@
+@media (max-width: 768px) {
+    .carousel {
+        &__inner {
+            width: 100%;
+            img {
+                width: 100%;
+            }
+        }
+    }
+    .slick-next img {
+        display: none;
+    }
+    .slick-dots {
+        display: flex;
+        justify-content: space-around;
+        li {
+            list-style-type: none;
+            button {
+                width: 50px;
+                border-radius: 15px;
+                border: none;
+                color: #fff;
+                background-color: $main-color;
+            }
+        }
+    }
+}
+
+@media (max-width: 425px) {
+    .carousel {
+        &__inner {
+            width: 100%;
+
+            img {
+                width: 60%;
+            }
+        }
+    }
+}

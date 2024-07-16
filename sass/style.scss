@@ -1,0 +1,41 @@
+@import 'base/variables';
+* {
+    font-family: "Josefin Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 200;
+    font-style: normal;
+    margin: 0;
+    padding: 0;
+} 
+
+a {
+    text-decoration: none;
+    color: #ffff;
+}
+
+a:hover {
+    color: #ffff;
+    text-decoration: none;
+}
+
+.container {
+    max-width: 1126px;
+    margin: 0 auto;
+}
+
+.title {
+    font-size: 38px;
+    text-align: center;
+    color: #ffff;
+}
+
+
+
+@import 'blocks/header.scss';
+@import 'blocks/services.scss';
+@import 'blocks/slider.scss';
+@import 'blocks/slider';
+@import 'blocks/main-services';
+
+
+//media queries

@@ -1,0 +1,67 @@
+// header
+
+header {
+    background-image: url('../../img/bg/header.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+
+}
+
+.header__body {}
+
+.header__link {
+    color: #FFFFFF;
+}
+
+.header__link:hover {
+    color: $main-color;
+}
+
+.header__block {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 320px;
+} 
+
+.header__block_title {
+    line-height: 76px;
+    font-size: 70px;
+    color: $main-color;
+    font-family: "Screwby W01 Wide Blk";
+}
+
+.header__block_subtitle {
+    line-height: 32px;
+    font-size: 32px;
+    color: #FFFFFF;
+    font-family: "Screwby W01 Wide Blk";
+}
+
+.header__block_phone {
+    margin-top: 15px;
+} 
+
+.header__block_phone a {
+    color: #FFFFFF;
+    font-size: 25px;
+}
+
+.header__block_btn {
+    margin-top: 15px;
+    color: #FFFFFF;
+    background: rgba($color: #000000, $alpha: 0.52);
+    border: 1px solid #ffffff;
+    border-radius: 45px;
+    padding: 26px 70px;
+}
+
+.header__block_btn:hover {
+    color: #FFFFFF;
+    text-decoration: none;
+    cursor: pointer;
+    background: rgba($color: $main-color, $alpha: 0.52);
+    transition: all ease-out .4s;
+}
