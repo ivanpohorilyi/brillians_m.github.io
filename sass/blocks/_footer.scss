@@ -1,0 +1,173 @@
+footer {
+    background-image: url('../../img/bg/footer.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100%;
+    padding-bottom: 30px;
+
+}
+
+.footer__wrapper {
+    padding: 150px 100px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.footer__info {
+    display: flex;
+    flex-direction: column;
+}
+
+.footer__info_logo {
+    font-size: 50px;
+    color: $main-color;
+    font-family: "Screwby W01 Wide Blk";
+}
+
+.footer__info_descr {
+    font-size: 14px;
+}
+
+.footer__info_links {
+    margin-top: 0px;
+    margin-left: -5px;
+    display: flex;
+}
+
+.footer__info_map {
+    margin-top: 20px;
+
+}
+
+.footer__info_map iframe {
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+}
+
+.footer__contacts {
+    display: flex;
+    flex-direction: column;
+}
+
+.footer__contacts_title {
+    font-size: 20px;
+    color: $main-color;
+}
+
+.footer__contacts_divider {
+    width: 40%;
+    height: 2px;
+    background: $main-color;
+}
+
+.footer__contacts_address {
+}
+
+.contacts_address_title {
+    font-size: 16px;
+    margin-top: 25px;
+}
+
+.contacts_address_address {
+    display: flex;
+    align-items: center;
+}
+
+.address_text {
+    margin-left: 4px;
+}
+
+.contacts_address_map {
+    color: $main-color;
+}
+
+.footer__contacts_phone {
+    margin-top: 10px;
+}
+
+.contacts_phone_title {
+    font-size: 16px;
+}
+
+.contacts_phone_phones {
+    display: flex;
+    align-items: center;
+}
+
+.phone_phones {
+    margin-left: 4px;
+    font-weight: 300;
+}
+
+.footer__contacts_email {
+    margin-top: 10px;
+}
+
+.contacts_email_title {
+    font-size: 16px;
+}
+
+.contacts_email_emails {
+    display: flex;
+    align-items: center;
+}
+
+.email_emails {
+    margin-left: 4px;
+}
+
+.footer__bottom_title {
+    font-size: 24px;
+    color: $main-color;
+    text-align: center;
+}
+
+.footer__bottom_map {
+    display: none;
+}
+
+@media (max-width: 983px) {
+    .footer__wrapper {
+        justify-content: center;
+        flex-direction: column;
+        padding: 150px 20px 80px 20px;
+    }
+    .footer__info {
+        align-items: center;
+    }
+    .footer__contacts {
+        align-items: center;
+    }
+    .footer__info_map {
+        display: none;
+    }
+    .footer__bottom_map {
+        margin-top: 30px;
+        display: block;
+    }
+    .footer__bottom_map iframe {
+        width: 100%;
+        height: 200px;
+    }
+    .footer__contacts {
+        margin-top: 20px;
+    }
+    .footer__contacts_divider {
+        width: 100%;
+    }
+    .footer__contacts_address {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .footer__bottom_title {
+        font-size: 19px;
+    }
+    .footer__info_logo {
+        font-size: 30px;
+    }
+    .footer__info_descr {
+        text-align: center;
+    } 
+}

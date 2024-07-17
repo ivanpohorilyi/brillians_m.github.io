@@ -1,0 +1,24 @@
+.feedback {
+    background: #fff;
+    height: 100%;
+}
+
+.feedback-slider_wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.feedback__title {
+    padding-top: 90px;
+    color: #000;
+}
+
+.feedback__subtitle {
+    text-align: center;
+    font-size: 22px;
+    margin-top: 8px;
+    color: #424242;
+}
+
+//slider
