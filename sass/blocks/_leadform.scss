@@ -23,6 +23,11 @@
     max-width: 690px;
 }
 
+.form__info {
+    font-family: "Inter", sans-serif;
+    font-weight: 300;
+}
+
 
 .form__info_email {
     margin-top: 10px;
@@ -64,12 +69,23 @@
     border-radius: 45px;
     background: black;
     margin-top: 30px;
+    color: #fff;
+}
+
+.leadform_btn:hover {
+    background: #fff;
+    color: black;
+    transition: 0.2s;
 }
 
 .form_label {
     font-size: 14px;
     font-weight: 200;
     width: 100%;
+}
+
+.alert-success {
+    display: none;
 }
 
 .form_input {
@@ -86,6 +102,8 @@
     color: #fff;
 }
 
+
+
 @media (max-width: 692px) {
     .form__wrapper {
         max-width: 350px;
@@ -95,5 +113,8 @@
     }
     .form__info {
         margin-top: 20px;
+    }
+    .form__send-result {
+        width: 100%;
     }
 }

@@ -1,6 +1,7 @@
 .feedback {
     background: #fff;
     height: 100%;
+    color: #000;
 }
 
 .feedback-slider_wrapper {
@@ -18,7 +19,68 @@
     text-align: center;
     font-size: 22px;
     margin-top: 8px;
+    margin-bottom: 5px;
     color: #424242;
 }
 
+.feedback_slide {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 50%;
+    padding: 50px 0;
+}
+
+.slide_images {
+    display: flex;
+}
+
+
+.images_row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+
+
+.row_text {
+    margin-right: 5px;
+}
+
+
+.slide_text {
+    color: #929292;
+    font-style: italic;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.slide_rating {
+    color: #000;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.rating_stars {
+    display: flex;
+}
+
+@media (max-width: 1000px) {
+    .images_row img {
+        width: 200px    ;
+    }
+}
+
+@media (max-width: 490px) {
+    .slide_text {
+        font-size: 10px;
+    }
+}
+
+
 //slider
+
