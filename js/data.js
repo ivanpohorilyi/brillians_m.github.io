@@ -1,4 +1,0 @@
-let data = {
-    ukrainian: {},
-    russian: {},
-}
