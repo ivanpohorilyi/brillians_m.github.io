@@ -1,3 +1,8 @@
+@font-face {
+    font-family: "EtienneC Bold";
+    src: url("../fonts/EtienneC\ Bold.otf");
+  }
+
 //nav 
 
 .nav-item-lang {
@@ -25,7 +30,7 @@ header {
     background-repeat: no-repeat;
     background-size: cover;
     height: 100%;
-    padding-bottom: 40px;
+    padding-bottom: 100px;
 }
 
 
@@ -42,21 +47,21 @@ header {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin-top: 320px;
+    margin-top: 250px;
 } 
 
 .header__block_title {
     line-height: 76px;
     font-size: 70px;
     color: $main-color;
-    font-family: "Screwby W01 Wide Blk";
+    font-family: "EtienneC Bold";
 }
 
 .header__block_subtitle {
     line-height: 32px;
     font-size: 32px;
     color: #FFFFFF;
-    font-family: "Screwby W01 Wide Blk";
+    font-family: "EtienneC Bold";
 }
 
 .header__block_phone {
@@ -77,6 +82,13 @@ header {
     padding: 26px 70px;
 }
 
+@media (max-width: 991px) {
+    .navbar-collapse {
+        position: absolute;
+        top: 50px;
+    }
+}
+
 @media (max-width: 500px) {
     .header__block_title {
         font-size: 40px;
@@ -85,7 +97,7 @@ header {
         font-size: 25px;
     }
     .header__block {
-        margin-top: 100px;
+        margin-top: 190px;
     }
     header {
         background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../img/bg/header.png');
