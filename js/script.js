@@ -98,3 +98,74 @@ var swiper = new Swiper(".swiper", {
   }
 });
 
+
+let currentIndex = 0;
+let startX, endX;
+let autoSlideInterval;
+
+function showSlide(index) {
+    const slides = document.querySelector('.slides');
+    const totalSlides = document.querySelectorAll('.slide').length;
+
+    if (index >= totalSlides) {
+        currentIndex = 0;
+    } else if (index < 0) {
+        currentIndex = totalSlides - 1;
+    } else {
+        currentIndex = index;
+    }
+
+    slides.style.transform = `translateX(-${currentIndex * 100}%)`;
+
+    updateNavigationDots();
+    resetAutoSlide();
+}
+
+function updateNavigationDots() {
+    const dots = document.querySelectorAll('.nav-dot');
+    dots.forEach((dot, index) => {
+        dot.classList.toggle('active', index === currentIndex);
+    });
+}
+
+function currentSlide(index) {
+    showSlide(index);
+}
+
+function autoSlide() {
+    showSlide(currentIndex + 1);
+}
+
+function resetAutoSlide() {
+    clearInterval(autoSlideInterval);
+    autoSlideInterval = setInterval(autoSlide, 3000);
+}
+
+// Обработчики событий для свайпа
+function touchStart(event) {
+    startX = event.touches[0].clientX;
+}
+
+function touchMove(event) {
+    endX = event.touches[0].clientX;
+}
+
+function touchEnd() {
+    if (startX > endX + 50) {
+        showSlide(currentIndex + 1);
+    } else if (startX < endX - 50) {
+        showSlide(currentIndex - 1);
+    }
+}
+
+// Инициализация
+document.addEventListener('DOMContentLoaded', () => {
+    showSlide(currentIndex);
+
+    const slider = document.querySelector('.slider');
+    slider.addEventListener('touchstart', touchStart);
+    slider.addEventListener('touchmove', touchMove);
+    slider.addEventListener('touchend', touchEnd);
+
+    autoSlideInterval = setInterval(autoSlide, 3000);
+});
