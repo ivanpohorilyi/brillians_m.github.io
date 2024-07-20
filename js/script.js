@@ -1,5 +1,5 @@
-const TELEGRAM_BOT_TOKEN = '7337894339:AAEI2VfdrTDV8kv_IZy87nhoJF7_nP8m1BE';
-const TELEGRAM_CHAT_ID = '@brilliansmleads';
+const TELEGRAM_BOT_TOKEN = process.end.API_KEY;
+const TELEGRAM_CHAT_ID = process.env.CHAT_ID;
 const API = `https://api.telegram.org/bot${TELEGRAM_BOT_TOKEN}/sendMessage`;
 
 
