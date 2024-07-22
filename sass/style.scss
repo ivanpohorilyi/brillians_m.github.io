@@ -1,32 +1,46 @@
 @import 'base/variables';
+
+@font-face {
+    font-family: "Roboto-Light";
+    src:
+        url("../fonts/Roboto-Light.woff") format("woff");
+}
+
+@font-face {
+    font-family: "Roboto-Regular";
+    src:
+        url("../fonts/Roboto-Regular.woff") format("woff");
+}
+
+@font-face {
+    font-family: 'Supermolot Bold';
+    src:
+        url("../fonts/Supermolot-Bold.woff") format("woff");
+}
+
+
+
+
 * {
-    font-family: "Josefin Sans", sans-serif;
     font-optical-sizing: auto;
-    font-weight: 200;
+    font-family: "Roboto-Light";
     font-style: normal;
     margin: 0;
     padding: 0;
 }
 
 h2 {
-    font-weight: 100;
-    font-family: "Josefin Sans", sans-serif;
+    font-family: "Roboto-Light";
 }
 
-form {
-    font-family: "Inter", sans-serif;
-    font-weight: 300;
+.card-header, .main__services_item_price {
+    font-family: 'Supermolot Bold';
 }
 
-.form__info div {
-    font-family: "Inter", sans-serif;
-    font-weight: 300;
-}
 
 a {
     text-decoration: none;
     color: #ffff;
-    font-weight: 300;
 }
 
 a:hover {
@@ -40,7 +54,6 @@ a:hover {
 }
 
 .title {
-    font-family: "Josefin Sans", sans-serif;
     font-size: 38px;
     text-align: center;
     color: #ffff;

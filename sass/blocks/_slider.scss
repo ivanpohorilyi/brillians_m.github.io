@@ -98,6 +98,10 @@ body {
     background-color: $primary !important;
   }
 
+  .swiper .swiper-slide .info .name {
+    padding-bottom: 20px;
+  }
+
   .swiper-pagination-bullet {
     background-color: grey;
   }

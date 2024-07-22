@@ -145,7 +145,7 @@ function autoSlide() {
 
 function resetAutoSlide() {
     clearInterval(autoSlideInterval);
-    autoSlideInterval = setInterval(autoSlide, 3000);
+    autoSlideInterval = setInterval(autoSlide, 9000);
 }
 
 // Обработчики событий для свайпа

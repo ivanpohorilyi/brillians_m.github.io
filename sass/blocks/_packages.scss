@@ -1,7 +1,4 @@
-@font-face {
-    font-family: "Montserrat", sans-serif;
-    src: url("../../fonts/Montserrat-BoldItalic.ttf");
-  }
+
 
 .packages {
     background-image: url('../img/bg/packages.png');
@@ -47,9 +44,6 @@
     font-size: 38px;
     color: $main-color;
     border: none;
-    font-family: "Montserrat", sans-serif;
-    font-weight: 650;
-    font-style: italic;
 }
 
 .card-line {
