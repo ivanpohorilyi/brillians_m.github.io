@@ -1,7 +1,11 @@
+window.addEventListener('load', function() {
+  preloader.style.display = 'none';
+})
 
 const TELEGRAM_BOT_TOKEN = '7337894339:AAEI2VfdrTDV8kv_IZy87nhoJF7_nP8m1BE';
 const TELEGRAM_CHAT_ID = '@brilliansmleads';
 const API = `https://api.telegram.org/bot${TELEGRAM_BOT_TOKEN}/sendMessage`;
+
 
 
 async function sendEmailTelegram(event) {
@@ -48,9 +52,6 @@ async function sendEmailTelegram(event) {
 
 const preloader = document.getElementById('preloader');
 
-window.addEventListener('load', function() {
-  preloader.style.display = 'none';
-})
 
 
 $(document).ready(function () {
