@@ -20,9 +20,9 @@ footer {
 }
 
 .footer__info_logo {
-    font-size: 50px;
+    font-size: 30px;
     color: $main-color;
-    font-family: "EtienneC Bold";
+    font-family: "TD Mars";
 }
 
 .footer__info_descr {
@@ -170,4 +170,10 @@ footer {
     .footer__info_descr {
         text-align: center;
     } 
+}
+
+@media (max-width: 430px) {
+    .footer__info_logo {
+        font-size: 20px;
+    }
 }

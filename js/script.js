@@ -108,6 +108,20 @@ var swiper = new Swiper(".swiper", {
 });
 
 
+const toggle_button = document.querySelector('.navbar-toggler');
+const navbar_collapse = document.querySelector('.navbar-collapse');
+
+toggle_button.addEventListener('click', function() {
+  if (navbar_collapse.classList.contains('show')) {
+    navbar_collapse.classList.remove('show');
+    navbar_collapse.classList.add('hide');
+  } else {
+    navbar_collapse.classList.add('show');
+  }
+})
+ 
+
+
 let currentIndex = 0;
 let startX, endX;
 let autoSlideInterval;
@@ -145,10 +159,10 @@ function autoSlide() {
     showSlide(currentIndex + 1);
 }
 
-// function resetAutoSlide() {
-//     clearInterval(autoSlideInterval);
-//   //autoSlideInterval = setInterval(autoSlide, 9000);
-// }
+function resetAutoSlide() {
+    clearInterval(autoSlideInterval);
+  //autoSlideInterval = setInterval(autoSlide, 9000);
+}
 
 // Обработчики событий для свайпа
 function touchStart(event) {
@@ -176,5 +190,5 @@ document.addEventListener('DOMContentLoaded', () => {
     slider.addEventListener('touchmove', touchMove);
     slider.addEventListener('touchend', touchEnd);
 
-    // autoSlideInterval = setInterval(autoSlide, 3000);
+    autoSlideInterval = setInterval(autoSlide, 100000);
 });
