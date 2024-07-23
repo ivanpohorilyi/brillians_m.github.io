@@ -1,3 +1,4 @@
+
 window.addEventListener('load', function() {
   preloader.style.display = 'none';
 })
@@ -144,10 +145,10 @@ function autoSlide() {
     showSlide(currentIndex + 1);
 }
 
-function resetAutoSlide() {
-    clearInterval(autoSlideInterval);
-    autoSlideInterval = setInterval(autoSlide, 9000);
-}
+// function resetAutoSlide() {
+//     clearInterval(autoSlideInterval);
+//   //autoSlideInterval = setInterval(autoSlide, 9000);
+// }
 
 // Обработчики событий для свайпа
 function touchStart(event) {
@@ -175,5 +176,5 @@ document.addEventListener('DOMContentLoaded', () => {
     slider.addEventListener('touchmove', touchMove);
     slider.addEventListener('touchend', touchEnd);
 
-    autoSlideInterval = setInterval(autoSlide, 3000);
+    // autoSlideInterval = setInterval(autoSlide, 3000);
 });
