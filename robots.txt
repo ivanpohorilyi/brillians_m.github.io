@@ -1,0 +1,4 @@
+User-agent: *
+Disallow:
+
+Sitemap: https://brillians-m-detailing.com/sitemap.xml
