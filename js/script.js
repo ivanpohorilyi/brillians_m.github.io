@@ -105,9 +105,6 @@ var swiper = new Swiper(".swiper", {
     nextEl: ".swiper-button-next",
     prevEl: ".swiper-button-prev"
   },
-  touchEventsTarget: 'wrapper', // добавьте это свойство
-  touchRatio: 1, // добавьте это свойство
-  simulateTouch: true // добавьте это свойство
 });
 
 
