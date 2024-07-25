@@ -712,8 +712,30 @@
               <form class="form_form" onsubmit="sendEmailTelegram(event)">
                 <label class="form_label lang" key="form_info_name" for="name">Ім'я*</label>
                 <input class="form_input" name="name" type="text" required>
+            
                 <label class="form_label label_t lang" key="form_info_phone" for="tel">Телефон*</label>
                 <input class="form_input" name="phone" type="text" required>
+            
+                <label class="form_label lang" key="form_info_select" style="margin-top: 10px;" for="selection">Оберіть послугу*</label>
+                <select class="form_input" name="selection" required>
+                  <option class="option_text lang" key='service_name-1' value="1">Полірування кузова</option>
+                  <option class="option_text lang" key='service_name-2' value="2">Нанесення захисних покриттів</option>
+                  <option class="option_text lang" key='service_name-3' value="3">Антихром</option>
+                  <option class="option_text lang" key='service_name-4' value="4">Тонування</option>
+                  <option class="option_text lang" key='service_name-5' value="5">Обклеювання кузова захисною плівкою</option>
+                  <option class="option_text lang" key='service_name-6' value="6">Полірування оптики</option>
+                  <option class="option_text lang" key='service_name-7' value="7">Очищення та полірування колісних дисків</option>
+                  <option class="option_text lang" key='service_name-8' value="8">Глибоке очищення скла</option>
+                  <option class="option_text lang" key='service_name-9' value="9">Антидощ</option>
+                  <option class="option_text lang" key='service_name-10' value="10">Ремонт скла</option>
+                  <option class="option_text lang" key='service_name-11' value="11">Полірування лобового скла</option>
+                  <option class="option_text lang" key='service_name-12' value="12">Детейлінг хімчистка салону</option>
+                  <option class="option_text lang" key='service_name-13' value="13">Шумоізоляція</option>
+                  <option class="option_text lang" key='service_name-14' value="14">Детейлінг підкапотного простору</option>
+                  <option class="option_text lang" key='service_name-15' value="15">Озонування</option>
+                  <option class="option_text lang" key='service_name-16' value="16">Реставрація салону</option>
+                </select>
+            
                 <button class="swiper-slide_btn leadform_btn lang" key="leadform_send" type="submit">Надіслати</button>
               </form>
             </div>

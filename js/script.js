@@ -4,21 +4,29 @@ window.addEventListener('load', function() {
 })
 
 const TELEGRAM_BOT_TOKEN = '7337894339:AAEI2VfdrTDV8kv_IZy87nhoJF7_nP8m1BE';
-const TELEGRAM_CHAT_ID = '@brilliansmleads';
+const TELEGRAM_CHAT_ID_DEFAULT = '@brilliansmleads';
+const TELEGRAM_CHAT_ID_SPECIAL = '@brillians_partners';
 const API = `https://api.telegram.org/bot${TELEGRAM_BOT_TOKEN}/sendMessage`;
-
-
 
 async function sendEmailTelegram(event) {
   event.preventDefault();
 
   const form = event.target;
   const formButton = document.querySelector('.leadform_btn');
-  const formSendResult = document.querySelector('.form__send-result');  
-  
+  const formSendResult = document.querySelector('.form__send-result'); 
+
+  const selectedValue = document.querySelector('select[name="selection"]').value;
+  const selectedOptionText = document.querySelector(`option[value="${selectedValue}"]`).textContent;
+
   formSendResult.textContent = '';
   const { name, phone } = Object.fromEntries(new FormData(form).entries());
-  const lead_text = `Заявка от ${name}!\nТелефон: ${phone}`;
+  const lead_text = `Заявка от ${name}!\nТелефон: ${phone}\nПослуга: ${selectedOptionText}`;
+
+  // Определяем нужный канал
+  let chat_id = TELEGRAM_CHAT_ID_DEFAULT;
+  if (['3', '4', '5'].includes(selectedValue)) {
+    chat_id = TELEGRAM_CHAT_ID_SPECIAL;
+  }
 
   try {
     formSendResult.textContent = `Відправлення...`;
@@ -29,7 +37,7 @@ async function sendEmailTelegram(event) {
         "Content-Type": "application/json",
       },
       body: JSON.stringify({
-        chat_id: TELEGRAM_CHAT_ID,
+        chat_id: chat_id,
         text: lead_text,
       }),
     });
