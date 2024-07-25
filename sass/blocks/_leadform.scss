@@ -12,10 +12,11 @@
     justify-content: center;
 }
 
+
 .form__wrapper {
     margin-top: 20%;
     display: flex;
-    flex-wrap: wrap-reverse;
+    // flex-wrap: wrap-reverse;
     background: rgba(0, 0, 0, 0.52);
     align-items: start;
     justify-content: center;
@@ -26,6 +27,8 @@
 
 .form__info {
     font-weight: 300;
+    margin-right: 50px;
+    width: 320px;
 }
 
 .form__info_address {
@@ -63,7 +66,6 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin-left: 100px;
 }
 
 
@@ -114,6 +116,7 @@
 @media (max-width: 692px) {
     .form__wrapper {
         max-width: 350px;
+        flex-wrap: wrap-reverse;
     }
     .form_form {
         margin-left: 0;
