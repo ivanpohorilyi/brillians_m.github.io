@@ -76,6 +76,7 @@ var arrLang = {
         'filter-btn-2': 'ХІМЧИСТКА',
         'filter-btn-3': 'ПОЛІРУВАННЯ',
         'filter-btn-4': 'ТОНУВАННЯ',
+        'filter-btn-5': 'ПЛІВКА',
 
         'form_info_address': 'м.Київ, вул. Бакинська, 35А',
         'form_info_socialmedia': 'Ми у соц мережах:',
@@ -228,6 +229,7 @@ var arrLang = {
         'filter-btn-2': 'ХИМЧИСТКА',
         'filter-btn-3': 'ПОЛИРОВКА',
         'filter-btn-4': 'ТОНИРОВКА',
+        'filter-btn-5': 'ПЛЁНКА',
 
         'form_info_address': 'г. Киев, ул. Бакинская, 35А',
         'form_info_socialmedia': 'Мы в соцсетях:',
