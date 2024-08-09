@@ -41,6 +41,55 @@
   <div id="preloader">
   </div>
 
+  <!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" style="font-family: TD Mars; color: #97FF14; text-align: center;" id="exampleModalLabel">Brillians_M</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <div class="form__form">
+          <form class="form_form" onsubmit="sendEmailTelegram(event)">
+            <label class="form_label fl_name lang" key="form_info_name" for="name">Ім'я*</label>
+            <input class="form_input f_input" name="name" type="text" required>
+        
+            <label class="form_label fl_phone label_t lang" key="form_info_phone" for="tel">Телефон*</label>
+            <input class="form_input f_input" name="phone" type="text" required>
+        
+            <label class="form_label fl_service lang" key="form_info_select" style="margin-top: 10px;" for="selection">Оберіть послугу*</label>
+            <select class="form_input f_input" name="selection" required>
+              <option class="option_text lang" key='service_name-0' selected value="0">Консультація</option>
+              <option class="option_text lang" key='service_name-1' value="1">Полірування кузова</option>
+              <option class="option_text lang" key='service_name-2' value="2">Нанесення захисних покриттів</option>
+              <option class="option_text lang" key='service_name-3' value="3">Антихром</option>
+              <option class="option_text lang" key='service_name-4' value="4">Тонування</option>
+              <option class="option_text lang" key='service_name-5' value="5">Обклеювання кузова захисною плівкою</option>
+              <option class="option_text lang" key='service_name-6' value="6">Полірування оптики</option>
+              <option class="option_text lang" key='service_name-7' value="7">Очищення та полірування колісних дисків</option>
+              <option class="option_text lang" key='service_name-8' value="8">Глибоке очищення скла</option>
+              <option class="option_text lang" key='service_name-9' value="9">Антидощ</option>
+              <option class="option_text lang" key='service_name-10' value="10">Ремонт скла</option>
+              <option class="option_text lang" key='service_name-11' value="11">Полірування лобового скла</option>
+              <option class="option_text lang" key='service_name-12' value="12">Детейлінг хімчистка салону</option>
+              <option class="option_text lang" key='service_name-13' value="13">Шумоізоляція</option>
+              <option class="option_text lang" key='service_name-14' value="14">Детейлінг підкапотного простору</option>
+              <option class="option_text lang" key='service_name-15' value="15">Озонування</option>
+              <option class="option_text lang" key='service_name-16' value="16">Реставрація салону</option>
+            </select>
+        
+            <button class="swiper-slide_btn leadform_btn lang" key="leadform_send" type="submit">Надіслати</button>
+          </form>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
   <header>
     <nav class="navbar navbar-expand-lg bg-body-grey">
       <div class="container-fluid">
@@ -92,7 +141,7 @@
           </div>
           <div class="header__block_subtitle">DETAILING</div>
           <div class="header__block_phone"><a href="tel:+380635130097">+38 (063) 513 00 97</a></div>
-          <a class="header__block_btn lang" href="#contacts" key="anAppointment">ЗАПИСАТИСЬ</a>
+          <a class="header__block_btn lang" href="#contacts" key="anAppointment" data-bs-toggle="modal" data-bs-target="#exampleModal">ЗАПИСАТИСЬ</a>
         </div>
       </div>
     </div>
@@ -119,8 +168,8 @@
                 <span class="type lang" key="service_descr-1">
                   відновлює блиск і глибину кольору автомобіля, видаляючи подряпини та забруднення.
                 </span>
-                <div class="btn-container"><a class="swiper-slide_btn lang" href="#contacts"
-                    key="anAppointment">ЗАПИСАТИСЬ</a></div>
+                <div class="btn-container"><a class="swiper-slide_btn lang" href="#"
+                    key="anAppointment" data-bs-toggle="modal" data-bs-target="#exampleModal">ЗАПИСАТИСЬ</a></div>
               </div>
             </div>
             <!-- slide 1 end -->
@@ -136,8 +185,8 @@
                   нанесення захисних покриттів гарантує захист від подряпин, корозії, атмосферних впливів, сонячного
                   випромінювання, запобігає контакту лакофарбового шару з вологою.
                 </span>
-                <div class="btn-container"><a class="swiper-slide_btn lang" href="#contacts"
-                    key="anAppointment">ЗАПИСАТИСЬ</a></div>
+                <div class="btn-container"><a class="swiper-slide_btn lang" href="#"
+                    key="anAppointment" data-bs-toggle="modal" data-bs-target="#exampleModal" >ЗАПИСАТИСЬ</a></div>
               </div>
             </div>
             <!-- slide 2 end -->
@@ -152,8 +201,8 @@
                 <span class="type lang" key="service_descr-3">
                   це відмінний спосіб коригування стилю вашого авто і збереження хрому у первозданному стані.
                 </span>
-                <div class="btn-container"><a class="swiper-slide_btn lang" href="#contacts"
-                    key="anAppointment">ЗАПИСАТИСЬ</a></div>
+                <div class="btn-container"><a class="swiper-slide_btn lang" href="#"
+                    key="anAppointment" data-bs-toggle="modal" data-bs-target="#exampleModal" >ЗАПИСАТИСЬ</a></div>
               </div>
             </div>
             <!-- slide 3 end -->
@@ -169,8 +218,8 @@
                   захищає салон і приладову дошку від вигорання, зменшує яскравість сонячного світла та сліпучі фари,
                   надає приватність, зменшуючи надокучливі погляди.
                 </span>
-                <div class="btn-container"><a class="swiper-slide_btn lang" href="#contacts"
-                    key="anAppointment">ЗАПИСАТИСЬ</a></div>
+                <div class="btn-container"><a class="swiper-slide_btn lang" href="#"
+                    key="anAppointment" data-bs-toggle="modal" data-bs-target="#exampleModal" >ЗАПИСАТИСЬ</a></div>
               </div>
             </div>
             <!-- slide 4 end -->
@@ -186,8 +235,8 @@
                   захищає від подряпин, потертостей, дорожніх реагентів, ультрафіолету, запобігає розшаруванню,
                   розтріскуванню лакофарбового покриття, знижує ризик корозії.
                 </span>
-                <div class="btn-container"><a class="swiper-slide_btn lang" href="#contacts"
-                    key="anAppointment">ЗАПИСАТИСЬ</a></div>
+                <div class="btn-container"><a class="swiper-slide_btn lang" href="#"
+                    key="anAppointment" data-bs-toggle="modal" data-bs-target="#exampleModal" >ЗАПИСАТИСЬ</a></div>
               </div>
             </div>
             <!-- slide 5 end -->
@@ -202,8 +251,8 @@
                 <span class="type lang" key="service_descr-6">
                   виправляє помутніння, пожовтіння та усуває дрібні дефекти і подряпини
                 </span>
-                <div class="btn-container"><a class="swiper-slide_btn lang" href="#contacts"
-                    key="anAppointment">ЗАПИСАТИСЬ</a></div>
+                <div class="btn-container"><a class="swiper-slide_btn lang" href="#"
+                    key="anAppointment" data-bs-toggle="modal" data-bs-target="#exampleModal" >ЗАПИСАТИСЬ</a></div>
               </div>
             </div>
             <!-- slide 6 end -->
@@ -218,8 +267,8 @@
                 <span class="type lang" key="service_descr-7">
                   збереження вихідного блиску алюмінієвих дисків і запобігання утворенню іржі на сталевих.
                 </span>
-                <div class="btn-container"><a class="swiper-slide_btn lang" href="#contacts"
-                    key="anAppointment">ЗАПИСАТИСЬ</a></div>
+                <div class="btn-container"><a class="swiper-slide_btn lang" href="#"
+                    key="anAppointment" data-bs-toggle="modal" data-bs-target="#exampleModal" >ЗАПИСАТИСЬ</a></div>
               </div>
             </div>
             <!-- slide 7 end -->
@@ -235,8 +284,8 @@
                   Видаляє бруд, залишки поліролей, атмосферних опадів, гудрону, комах, силікону від щіток-очисників,
                   соку дерев.
                 </span>
-                <div class="btn-container"><a class="swiper-slide_btn lang" href="#contacts"
-                    key="anAppointment">ЗАПИСАТИСЬ</a></div>
+                <div class="btn-container"><a class="swiper-slide_btn lang" href="#"
+                    key="anAppointment" data-bs-toggle="modal" data-bs-target="#exampleModal" >ЗАПИСАТИСЬ</a></div>
               </div>
             </div>
             <!-- slide 8 end -->
@@ -251,8 +300,8 @@
                 <span class="type lang" key="service_descr-9">
                   забезпечує захист від води, бруду: будь-який пил починає зісковзувати з поверхні
                 </span>
-                <div class="btn-container"><a class="swiper-slide_btn lang" href="#contacts"
-                    key="anAppointment">ЗАПИСАТИСЬ</a></div>
+                <div class="btn-container"><a class="swiper-slide_btn lang" href="#"
+                    key="anAppointment" data-bs-toggle="modal" data-bs-target="#exampleModal" >ЗАПИСАТИСЬ</a></div>
               </div>
             </div>
             <!-- slide 9 end -->
@@ -267,8 +316,8 @@
                 <span class="type lang" key="service_descr-10">
                   Усунення тріщин та сколів на склі.
                 </span>
-                <div class="btn-container"><a class="swiper-slide_btn lang" href="#contacts"
-                    key="anAppointment">ЗАПИСАТИСЬ</a></div>
+                <div class="btn-container"><a class="swiper-slide_btn lang" href="#"
+                    key="anAppointment" data-bs-toggle="modal" data-bs-target="#exampleModal" >ЗАПИСАТИСЬ</a></div>
               </div>
             </div>
             <!-- slide 10 end -->
@@ -284,8 +333,8 @@
                   процедура видаляє верхній пошкоджений шар скла, зберігаючи його цілісність, використовуючи якісні
                   абразивні матеріали для усунення дрібних дефектів.
                 </span>
-                <div class="btn-container"><a class="swiper-slide_btn lang" href="#contacts"
-                    key="anAppointment">ЗАПИСАТИСЬ</a></div>
+                <div class="btn-container"><a class="swiper-slide_btn lang" href="#"
+                    key="anAppointment" data-bs-toggle="modal" data-bs-target="#exampleModal" >ЗАПИСАТИСЬ</a></div>
               </div>
             </div>
             <!-- slide 11 end -->
@@ -301,8 +350,8 @@
                   ретельне очищення всіх елементів салону з видаленням неприємних запахів. Це найкращий спосіб
                   підтримувати автомобіль у доглянутому стані.
                 </span>
-                <div class="btn-container"><a class="swiper-slide_btn lang" href="#contacts"
-                    key="anAppointment">ЗАПИСАТИСЬ</a></div>
+                <div class="btn-container"><a class="swiper-slide_btn lang" href="#"
+                    key="anAppointment" data-bs-toggle="modal" data-bs-target="#exampleModal" >ЗАПИСАТИСЬ</a></div>
               </div>
             </div>
             <!-- slide 12 end -->
@@ -317,8 +366,8 @@
                 <span class="type lang" key="service_descr-13">
                   Зменшення рівня шуму в салоні.
                 </span>
-                <div class="btn-container"><a class="swiper-slide_btn lang" href="#contacts"
-                    key="anAppointment">ЗАПИСАТИСЬ</a></div>
+                <div class="btn-container"><a class="swiper-slide_btn lang" href="#"
+                    key="anAppointment" data-bs-toggle="modal" data-bs-target="#exampleModal" >ЗАПИСАТИСЬ</a></div>
               </div>
             </div>
             <!-- slide 13 end -->
@@ -334,8 +383,8 @@
                   професійне очищення та догляд, що забезпечують повну безпеку всіх агрегатів підкапотного простору.
                   Брудний підкапотний простір негативно впливає на теплообмін двигуна.
                 </span>
-                <div class="btn-container"><a class="swiper-slide_btn lang" href="#contacts"
-                    key="anAppointment">ЗАПИСАТИСЬ</a></div>
+                <div class="btn-container"><a class="swiper-slide_btn lang" href="#"
+                    key="anAppointment" data-bs-toggle="modal" data-bs-target="#exampleModal" >ЗАПИСАТИСЬ</a></div>
               </div>
             </div>
             <!-- slide 14 end -->
@@ -350,8 +399,8 @@
                 <span class="type lang" key="service_descr-15">
                   Видалення неприємних запахів з салону.
                 </span>
-                <div class="btn-container"><a class="swiper-slide_btn lang" href="#contacts"
-                    key="anAppointment">ЗАПИСАТИСЬ</a></div>
+                <div class="btn-container"><a class="swiper-slide_btn lang" href="#"
+                    key="anAppointment" data-bs-toggle="modal" data-bs-target="#exampleModal" >ЗАПИСАТИСЬ</a></div>
               </div>
             </div>
             <!-- slide 15 end -->
@@ -367,27 +416,20 @@
                   відновлення пошкоджених або зношених елементів салону автомобіля. Реставрація та фарбування шкіри та
                   пластику в салоні автомобіля.
                 </span>
-                <div class="btn-container"><a class="swiper-slide_btn lang" href="#contacts"
-                    key="anAppointment">ЗАПИСАТИСЬ</a></div>
+                <div class="btn-container"><a class="swiper-slide_btn lang" href="#"
+                    key="anAppointment" data-bs-toggle="modal" data-bs-target="#exampleModal" >ЗАПИСАТИСЬ</a></div>
               </div>
             </div>
             <!-- slide 16 end -->
-
-
-
-
-
             <!-- If we need pagination -->
             <div class="swiper-pagination"></div>
             <!-- If we need navigation buttons -->
-            <div class="swiper-button-prev"></div>
-            <div class="swiper-button-next"></div>
+            <!-- <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div> -->
           </div>
         </div>
       </div>
 
-      <div class="services__text sec-t lang" key="title-2">ГОРТАЙ ДАЛІ</div>
-      <div class="services__underline"></div>
     </div>
   </section>
 
@@ -405,7 +447,9 @@
       <div class="main__services_wrapper">
 
         <div class="main__services_item">
+          
           <img src="img/product-1.png" alt="Полировка" class="main__services_item_img">
+
           <div class="main__services_item_title lang" key="service-title-1">Полірування</div>
 
           <div class="main__services_item_price">
@@ -415,8 +459,9 @@
 
           <div class="main__services_item_descr lang" key="service_descrr-1">Відновлює блиск і захищає кузов від
             пошкоджень.</div>
-          <a class="swiper-slide_btn main__services_btn lang" href="#contacts" key="anAppointment">ЗАПИСАТИСЬ</a>
-        </div>
+          <a class="swiper-slide_btn main__services_btn lang" href="#" key="anAppointment" data-bs-toggle="modal" data-bs-target="#exampleModal">ЗАПИСАТИСЬ</a>
+        
+         </div>
 
         <div class="main__services_item">
           <img src="img/product-2.png" alt="Керамика авто" class="main__services_item_img">
@@ -429,7 +474,7 @@
 
           <div class="main__services_item_descr lang" key="service_descrr-2">Рішення для збереження та захисту поверхонь
             від впливу навколишнього середовища.</div>
-          <a class="swiper-slide_btn main__services_btn lang" href="#contacts" key="anAppointment">ЗАПИСАТИСЬ</a>
+          <a class="swiper-slide_btn main__services_btn lang" href="#" key="anAppointment" data-bs-toggle="modal" data-bs-target="#exampleModal">ЗАПИСАТИСЬ</a>
         </div>
 
         <div class="main__services_item">
@@ -443,7 +488,7 @@
 
           <div class="main__services_item_descr lang" key="service_descrr-3">Ефективний спосіб захисту та оновлення
             зовнішнього вигляду вашого автомобіля або будь-якої іншої поверхні.</div>
-          <a class="swiper-slide_btn main__services_btn lang" href="#contacts" key="anAppointment">ЗАПИСАТИСЬ</a>
+          <a class="swiper-slide_btn main__services_btn lang" href="#" key="anAppointment" data-bs-toggle="modal" data-bs-target="#exampleModal">ЗАПИСАТИСЬ</a>
         </div>
 
         <div class="main__services_item">
@@ -458,7 +503,7 @@
           <div class="main__services_item_descr lang" key="service_descrr-4">Ця процедура видаляє дрібні подряпини,
             потертості та відкладення, відновлюючи прозорість скла та забезпечуючи кращу видимість в умовах
             недостатнього освітлення або поганих погодних умов.</div>
-          <a class="swiper-slide_btn main__services_btn lang" href="#contacts" key="anAppointment">ЗАПИСАТИСЬ</a>
+          <a class="swiper-slide_btn main__services_btn lang" href="#" key="anAppointment" data-bs-toggle="modal" data-bs-target="#exampleModal">ЗАПИСАТИСЬ</a>
         </div>
 
         <div class="main__services_item">
@@ -473,7 +518,7 @@
           <div class="main__services_item_descr lang" key="service_descrr-5">Тонування захищає від ультрафіолетових
             променів, зменшує відблиски, забезпечує комфортну температуру всередині та допомагає запобігти вигоранню
             оббивки.</div>
-          <a class="swiper-slide_btn main__services_btn lang" href="#contacts" key="anAppointment">ЗАПИСАТИСЬ</a>
+          <a class="swiper-slide_btn main__services_btn lang" href="#" key="anAppointment" data-bs-toggle="modal" data-bs-target="#exampleModal">ЗАПИСАТИСЬ</a>
         </div>
 
         <div class="main__services_item">
@@ -488,7 +533,7 @@
           <div class="main__services_item_descr lang" key="service_descrr-6">Процедура включає видалення бруду, пилу,
             плям та неприємних запахів з усіх поверхонь, таких як сидіння, килимки, панелі, та інші елементи салону.
           </div>
-          <a class="swiper-slide_btn main__services_btn lang" href="#contacts" key="anAppointment">ЗАПИСАТИСЬ</a>
+          <a class="swiper-slide_btn main__services_btn lang" href="#" key="anAppointment" data-bs-toggle="modal" data-bs-target="#exampleModal">ЗАПИСАТИСЬ</a>
         </div>
 
       </div>

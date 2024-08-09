@@ -1,5 +1,5 @@
 
-window.addEventListener('load', function() {
+window.addEventListener('load', function () {
   preloader.style.display = 'none';
 })
 
@@ -13,7 +13,7 @@ async function sendEmailTelegram(event) {
 
   const form = event.target;
   const formButton = document.querySelector('.leadform_btn');
-  const formSendResult = document.querySelector('.form__send-result'); 
+  const formSendResult = document.querySelector('.form__send-result');
 
   const selectedValue = document.querySelector('select[name="selection"]').value;
   const selectedOptionText = document.querySelector(`option[value="${selectedValue}"]`).textContent;
@@ -107,7 +107,7 @@ var swiper = new Swiper(".swiper", {
   loop: true,
   pagination: {
     el: ".swiper-pagination",
-    clickable: true
+    clickable: true,
   },
   navigation: {
     nextEl: ".swiper-button-next",
@@ -119,7 +119,7 @@ var swiper = new Swiper(".swiper", {
 const toggle_button = document.querySelector('.navbar-toggler');
 const navbar_collapse = document.querySelector('.navbar-collapse');
 
-toggle_button.addEventListener('click', function() {
+toggle_button.addEventListener('click', function () {
   if (navbar_collapse.classList.contains('show')) {
     navbar_collapse.classList.remove('show');
     navbar_collapse.classList.add('hide');
@@ -127,7 +127,7 @@ toggle_button.addEventListener('click', function() {
     navbar_collapse.classList.add('show');
   }
 })
- 
+
 
 
 let currentIndex = 0;
@@ -135,68 +135,68 @@ let startX, endX;
 let autoSlideInterval;
 
 function showSlide(index) {
-    const slides = document.querySelector('.slides');
-    const totalSlides = document.querySelectorAll('.slide').length;
+  const slides = document.querySelector('.slides');
+  const totalSlides = document.querySelectorAll('.slide').length;
 
-    if (index >= totalSlides) {
-        currentIndex = 0;
-    } else if (index < 0) {
-        currentIndex = totalSlides - 1;
-    } else {
-        currentIndex = index;
-    }
+  if (index >= totalSlides) {
+    currentIndex = 0;
+  } else if (index < 0) {
+    currentIndex = totalSlides - 1;
+  } else {
+    currentIndex = index;
+  }
 
-    slides.style.transform = `translateX(-${currentIndex * 100}%)`;
+  slides.style.transform = `translateX(-${currentIndex * 100}%)`;
 
-    updateNavigationDots();
-    resetAutoSlide();
+  updateNavigationDots();
+  resetAutoSlide();
 }
 
 function updateNavigationDots() {
-    const dots = document.querySelectorAll('.nav-dot');
-    dots.forEach((dot, index) => {
-        dot.classList.toggle('active', index === currentIndex);
-    });
+  const dots = document.querySelectorAll('.nav-dot');
+  dots.forEach((dot, index) => {
+    dot.classList.toggle('active', index === currentIndex);
+  });
 }
 
 function currentSlide(index) {
-    showSlide(index);
+  showSlide(index);
 }
 
 function autoSlide() {
-    showSlide(currentIndex + 1);
+  showSlide(currentIndex + 1);
 }
 
 function resetAutoSlide() {
-    clearInterval(autoSlideInterval);
+  clearInterval(autoSlideInterval);
   //autoSlideInterval = setInterval(autoSlide, 9000);
 }
 
 // Обработчики событий для свайпа
 function touchStart(event) {
-    startX = event.touches[0].clientX;
+  startX = event.touches[0].clientX;
 }
 
 function touchMove(event) {
-    endX = event.touches[0].clientX;
+  endX = event.touches[0].clientX;
 }
 
 function touchEnd() {
-    if (startX > endX + 50) {
-        showSlide(currentIndex + 1);
-    } else if (startX < endX - 50) {
-        showSlide(currentIndex - 1);
-    }
+  if (startX > endX + 50) {
+    showSlide(currentIndex + 1);
+  } else if (startX < endX - 50) {
+    showSlide(currentIndex - 1);
+  }
 }
 
 // Инициализация
 document.addEventListener('DOMContentLoaded', () => {
-    showSlide(currentIndex);
+  showSlide(currentIndex);
 
-    const slider = document.querySelector('.slider');
-    slider.addEventListener('touchstart', touchStart);
-    slider.addEventListener('touchmove', touchMove);
-    slider.addEventListener('touchend', touchEnd);
+  const slider = document.querySelector('.slider');
+  slider.addEventListener('touchstart', touchStart);
+  slider.addEventListener('touchmove', touchMove);
+  slider.addEventListener('touchend', touchEnd);
 
-    autoSlideInterval = setInterval(autoSlide, 100000);
+  autoSlideInterval = setInterval(autoSlide, 100000);
 });

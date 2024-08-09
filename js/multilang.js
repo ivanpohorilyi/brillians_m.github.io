@@ -94,6 +94,8 @@ var arrLang = {
         'footer_email_text': 'Пошта',
 
         //services
+        'service_name-0': 'Консультація',
+
         'service_name-1': 'Полірування кузова',
         'service_descr-1': 'відновлює блиск і глибину кольору автомобіля, видаляючи подряпини та забруднення.',
 
@@ -245,6 +247,8 @@ var arrLang = {
         'footer_phone_text': 'Телефоны',
         'footer_address_way': 'Проложить маршрут',
         'footer_email_text': 'Почта',
+
+        'service_name-0': 'Консультация',
 
         'service_name-1': 'Полировка кузова',
         'service_descr-1': 'восстанавливает блеск и глубину цвета автомобиля, удаляя царапины и загрязнения.',
