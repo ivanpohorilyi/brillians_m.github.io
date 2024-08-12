@@ -1,0 +1,36 @@
+.whywe {
+    background-image: url('../img/bg/whywe.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+
+.why_title {
+    padding: 50px 0;
+}
+
+.whywe__items {
+    width: 60%;
+    margin: 0 auto;
+    padding-bottom: 100px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+    flex-wrap: wrap;
+}
+
+.whywe__item {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.whywe_text {
+    width: 130px;
+    margin-top: 10px;
+}
+
+
+
