@@ -1,7 +1,7 @@
 
-window.addEventListener('load', function () {
-  preloader.style.display = 'none';
-})
+// window.addEventListener('load', function () {
+//   preloader.style.display = 'none';
+// })
 
 const TELEGRAM_BOT_TOKEN = '7337894339:AAEI2VfdrTDV8kv_IZy87nhoJF7_nP8m1BE';
 const TELEGRAM_CHAT_ID_DEFAULT = '@brilliansmleads';
